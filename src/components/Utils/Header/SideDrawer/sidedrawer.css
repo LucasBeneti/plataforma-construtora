@@ -1,0 +1,24 @@
+.SideDrawer {
+  position: fixed;
+  width: 33%;
+  max-width: 70%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  background-color: rgb(12, 12, 52);
+  padding: 0.8em 0.5em;
+  /* box-sizing: border-box; */
+  transition: transform 0.3s ease-out;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+
+.Open {
+  transform: translateX(100%);
+}
+c .Close {
+  transform: translateX(0);
+}

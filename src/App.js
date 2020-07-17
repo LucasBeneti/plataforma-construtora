@@ -5,6 +5,9 @@ import { history } from "./components/helpers/history";
 
 import Auth from "./components/Auth/Auth";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Relatorio from "./components/Relatorio/Relatorio";
+
+import "./App.css";
 
 const App = () => {
   useEffect(() => {
@@ -12,11 +15,12 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="App">
       <Router history={history}>
         <Switch>
           <Route exact path="/login" component={Auth}></Route>
           <Route exact path="/dashboard" component={Dashboard}></Route>
+          <Route exact path="/relatorio" component={Relatorio}></Route>
         </Switch>
       </Router>
       <p>Menu simples:</p>
